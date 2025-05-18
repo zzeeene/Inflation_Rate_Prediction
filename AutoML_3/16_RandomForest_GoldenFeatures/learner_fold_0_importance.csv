@@ -1,0 +1,25 @@
+feature,mean_importance
+GDP Growth Rate (%),-0.033151485656177426
+Country_France,-0.01509874338664181
+Stock Index Value_ratio_Interest Rate (%),-0.0031529089780959474
+Stock Index Value,0.0
+Unemployment Rate (%)_multiply_GDP Growth Rate (%),0.0
+Interest Rate (%)_multiply_GDP Growth Rate (%),0.0
+Unemployment Rate (%)_sum_GDP Growth Rate (%),0.0
+Stock Index Value_multiply_GDP Growth Rate (%),0.0
+Country_UK,0.0
+Country_India,0.0
+Country_USA,0.0
+Country_China,0.0
+Country_Canada,0.0
+Country_Brazil,0.0
+Country_Australia,0.0
+Country_Germany,0.0
+Country_Japan,0.0
+Stock Index Value_ratio_GDP Growth Rate (%),0.002301869089773234
+GDP Growth Rate (%)_ratio_Stock Index Value,0.007568875955852361
+Interest Rate (%),0.009125854911402453
+Interest Rate (%)_ratio_Stock Index Value,0.025933173205095007
+GDP Growth Rate (%)_ratio_Unemployment Rate (%),0.04055177915381773
+Unemployment Rate (%),0.12473660682263929
+Interest Rate (%)_sum_Unemployment Rate (%),0.1529087150180489

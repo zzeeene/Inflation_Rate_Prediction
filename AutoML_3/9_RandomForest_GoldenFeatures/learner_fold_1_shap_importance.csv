@@ -1,0 +1,25 @@
+feature,shap_importance
+GDP Growth Rate (%)_ratio_Unemployment Rate (%),0.025328780614509234
+Interest Rate (%),0.02343158731239824
+Unemployment Rate (%),0.021756671711316528
+GDP Growth Rate (%)_ratio_Stock Index Value,0.016700945271158663
+Unemployment Rate (%)_sum_GDP Growth Rate (%),0.015528944083633619
+Stock Index Value,0.012272140995549569
+Interest Rate (%)_sum_Unemployment Rate (%),0.012239923707945485
+Stock Index Value_ratio_GDP Growth Rate (%),0.01173203811309133
+Stock Index Value_ratio_Interest Rate (%),0.010258306079820093
+Stock Index Value_multiply_GDP Growth Rate (%),0.0082760038310099
+GDP Growth Rate (%),0.008089361883055361
+Country_Canada,0.006122347641585772
+Unemployment Rate (%)_multiply_GDP Growth Rate (%),0.004967847359853025
+Interest Rate (%)_ratio_Stock Index Value,0.004726089426987212
+Interest Rate (%)_multiply_GDP Growth Rate (%),0.004165401996280759
+Country_USA,0.0017832939995701515
+Country_France,0.0007718051586825389
+Country_Germany,0.0003652459479084388
+Country_Japan,0.0
+Country_India,0.0
+Country_China,0.0
+Country_Brazil,0.0
+Country_Australia,0.0
+Country_UK,0.0

@@ -1,0 +1,4 @@
+mljar_supervised==1.1.17
+numpy==2.2.6
+pandas==2.2.3
+scikit_learn==1.6.1

@@ -1,0 +1,25 @@
+feature,mean_importance
+Interest Rate (%)_ratio_Stock Index Value,-0.011671889363841493
+Stock Index Value_ratio_Interest Rate (%),-0.007894452753708947
+Country_China,-0.004109528300168775
+GDP Growth Rate (%)_diff_Unemployment Rate (%),-0.0022170326916634677
+Stock Index Value,-0.0018245075081044337
+Interest Rate (%)_multiply_Unemployment Rate (%),-0.0013769519487830007
+Country_Germany,-0.0008444356849559131
+GDP Growth Rate (%)_diff_Interest Rate (%),-0.0006974665989261996
+Country_Japan,-0.0001590931503103299
+Country_Brazil,-0.00010357117771349067
+Stock Index Value_ratio_Unemployment Rate (%),0.0
+Country_UK,0.0
+Unemployment Rate (%)_diff_Stock Index Value,0.0
+Country_Australia,0.0
+Interest Rate (%)_diff_Stock Index Value,0.0
+Country_India,0.0011977263276876648
+Country_Canada,0.001970586753572956
+Country_USA,0.0020472431110479137
+Country_France,0.002115818830926752
+Interest Rate (%),0.0035251861958137455
+Unemployment Rate (%),0.012403901597505752
+Unemployment Rate (%)_ratio_Stock Index Value,0.01658958726630142
+GDP Growth Rate (%),0.02122381169599974
+Unemployment Rate (%)_ratio_Interest Rate (%),0.027457587080786716

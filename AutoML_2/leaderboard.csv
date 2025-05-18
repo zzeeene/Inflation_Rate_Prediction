@@ -1,0 +1,37 @@
+name,model_type,metric_type,metric_value,train_time,single_prediction_time
+1_Default_Xgboost,Xgboost,rmse,3.1224463298478407,10.09,0.1411
+2_Default_NeuralNetwork,Neural Network,rmse,3.2064885272450914,2.37,0.1618
+3_Default_RandomForest,Random Forest,rmse,3.057175155656505,12.29,0.1502
+4_Xgboost,Xgboost,rmse,3.129320713187924,10.15,0.1413
+8_RandomForest,Random Forest,rmse,3.1306258913871687,12.33,0.1547
+12_NeuralNetwork,Neural Network,rmse,3.310754701733244,2.52,0.159
+5_Xgboost,Xgboost,rmse,3.139415359600051,10.62,0.1427
+9_RandomForest,Random Forest,rmse,3.1180565158717246,13.11,0.1563
+13_NeuralNetwork,Neural Network,rmse,3.3708800656659506,2.74,0.16
+6_Xgboost,Xgboost,rmse,3.134947124710187,10.07,0.1426
+10_RandomForest,Random Forest,rmse,3.1497242033582222,14.0,0.1627
+14_NeuralNetwork,Neural Network,rmse,3.175424731601259,2.94,0.1573
+7_Xgboost,Xgboost,rmse,3.1268477375193346,9.99,0.1418
+11_RandomForest,Random Forest,rmse,3.1394881135387807,13.26,0.1562
+15_NeuralNetwork,Neural Network,rmse,3.1545199036563463,2.91,0.1589
+3_Default_RandomForest_GoldenFeatures,Random Forest,rmse,3.1215738323992097,19.45,0.2339
+9_RandomForest_GoldenFeatures,Random Forest,rmse,3.1300424387094816,19.16,0.2292
+1_Default_Xgboost_GoldenFeatures,Xgboost,rmse,3.1168470049022208,12.97,0.2048
+16_RandomForest,Random Forest,rmse,3.1128952145076574,13.43,0.1576
+17_RandomForest,Random Forest,rmse,3.0956886356931426,13.37,0.1572
+18_Xgboost_GoldenFeatures,Xgboost,rmse,3.1120943229650453,13.1,0.2028
+19_Xgboost_GoldenFeatures,Xgboost,rmse,3.1211341737427727,13.09,0.2013
+20_RandomForest,Random Forest,rmse,3.120137825310143,16.66,0.1818
+21_RandomForest,Random Forest,rmse,3.070047019499083,15.06,0.1676
+22_Xgboost,Xgboost,rmse,3.1162873369431465,11.11,0.1408
+23_Xgboost,Xgboost,rmse,3.1110701104579452,11.08,0.1422
+24_NeuralNetwork,Neural Network,rmse,3.186996267715658,3.36,0.1572
+25_NeuralNetwork,Neural Network,rmse,3.230492043254723,3.47,0.1592
+26_NeuralNetwork,Neural Network,rmse,3.204195983522135,3.45,0.1612
+27_RandomForest,Random Forest,rmse,3.0888642942429816,13.5,0.1534
+28_RandomForest,Random Forest,rmse,3.07386449113702,13.52,0.1542
+29_RandomForest,Random Forest,rmse,3.069481943029596,15.61,0.1741
+30_Xgboost,Xgboost,rmse,3.132386388257734,11.1,0.1403
+31_Xgboost_GoldenFeatures,Xgboost,rmse,3.1035285805138373,13.49,0.2041
+32_NeuralNetwork,Neural Network,rmse,3.2974137679667974,3.7,0.1577
+33_NeuralNetwork,Neural Network,rmse,3.1557367415313804,3.89,0.1581

@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "Stock Index Value",
+            "feature2": "GDP Growth Rate (%)",
+            "operation": "multiply",
+            "score": 1.0813069591
+        },
+        {
+            "feature1": "GDP Growth Rate (%)",
+            "feature2": "Unemployment Rate (%)",
+            "operation": "ratio",
+            "score": 1.0899210514
+        },
+        {
+            "feature1": "Stock Index Value",
+            "feature2": "GDP Growth Rate (%)",
+            "operation": "ratio",
+            "score": 1.1373047603
+        },
+        {
+            "feature1": "Unemployment Rate (%)",
+            "feature2": "GDP Growth Rate (%)",
+            "operation": "sum",
+            "score": 1.1531372955
+        },
+        {
+            "feature1": "Interest Rate (%)",
+            "feature2": "Unemployment Rate (%)",
+            "operation": "sum",
+            "score": 1.1596472866
+        },
+        {
+            "feature1": "Interest Rate (%)",
+            "feature2": "GDP Growth Rate (%)",
+            "operation": "multiply",
+            "score": 1.1614278166
+        },
+        {
+            "feature1": "Interest Rate (%)",
+            "feature2": "Stock Index Value",
+            "operation": "ratio",
+            "score": 1.1699276689
+        },
+        {
+            "feature1": "Unemployment Rate (%)",
+            "feature2": "GDP Growth Rate (%)",
+            "operation": "multiply",
+            "score": 1.1737704956
+        },
+        {
+            "feature1": "GDP Growth Rate (%)",
+            "feature2": "Stock Index Value",
+            "operation": "ratio",
+            "score": 1.1737724231
+        },
+        {
+            "feature1": "Stock Index Value",
+            "feature2": "Interest Rate (%)",
+            "operation": "ratio",
+            "score": 1.1743657543
+        }
+    ],
+    "new_columns": [
+        "Stock Index Value_multiply_GDP Growth Rate (%)",
+        "GDP Growth Rate (%)_ratio_Unemployment Rate (%)",
+        "Stock Index Value_ratio_GDP Growth Rate (%)",
+        "Unemployment Rate (%)_sum_GDP Growth Rate (%)",
+        "Interest Rate (%)_sum_Unemployment Rate (%)",
+        "Interest Rate (%)_multiply_GDP Growth Rate (%)",
+        "Interest Rate (%)_ratio_Stock Index Value",
+        "Unemployment Rate (%)_multiply_GDP Growth Rate (%)",
+        "GDP Growth Rate (%)_ratio_Stock Index Value",
+        "Stock Index Value_ratio_Interest Rate (%)"
+    ],
+    "ml_task": "regression"
+}

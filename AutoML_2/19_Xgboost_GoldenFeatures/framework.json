@@ -1,0 +1,1225 @@
+{
+    "uid": "6b81cfba-fc43-41c5-bfc6-748f408142b9",
+    "name": "19_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "diff",
+                        "score": 1.0934042957
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1155696217
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1193133747
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1285914928
+                    },
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "diff",
+                        "score": 1.1292543981
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "multiply",
+                        "score": 1.1296330865
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1639359579
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1668752837
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    }
+                ],
+                "new_columns": [
+                    "GDP Growth Rate (%)_diff_Interest Rate (%)",
+                    "Interest Rate (%)_ratio_Stock Index Value",
+                    "Unemployment Rate (%)_ratio_Interest Rate (%)",
+                    "Stock Index Value_ratio_Interest Rate (%)",
+                    "GDP Growth Rate (%)_diff_Unemployment Rate (%)",
+                    "Interest Rate (%)_multiply_Unemployment Rate (%)",
+                    "Unemployment Rate (%)_ratio_Stock Index Value",
+                    "Stock Index Value_ratio_Unemployment Rate (%)",
+                    "Interest Rate (%)_diff_Stock Index Value",
+                    "Unemployment Rate (%)_diff_Stock Index Value"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.6462785724183268
+                ],
+                "mean": [
+                    1.6150544755657052
+                ],
+                "var": [
+                    0.4176759931670704
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "diff",
+                        "score": 1.0934042957
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1155696217
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1193133747
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1285914928
+                    },
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "diff",
+                        "score": 1.1292543981
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "multiply",
+                        "score": 1.1296330865
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1639359579
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1668752837
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    }
+                ],
+                "new_columns": [
+                    "GDP Growth Rate (%)_diff_Interest Rate (%)",
+                    "Interest Rate (%)_ratio_Stock Index Value",
+                    "Unemployment Rate (%)_ratio_Interest Rate (%)",
+                    "Stock Index Value_ratio_Interest Rate (%)",
+                    "GDP Growth Rate (%)_diff_Unemployment Rate (%)",
+                    "Interest Rate (%)_multiply_Unemployment Rate (%)",
+                    "Unemployment Rate (%)_ratio_Stock Index Value",
+                    "Stock Index Value_ratio_Unemployment Rate (%)",
+                    "Interest Rate (%)_diff_Stock Index Value",
+                    "Unemployment Rate (%)_diff_Stock Index Value"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.6386230908335577
+                ],
+                "mean": [
+                    1.616189284027967
+                ],
+                "var": [
+                    0.40783945214580647
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "diff",
+                        "score": 1.0934042957
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1155696217
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1193133747
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1285914928
+                    },
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "diff",
+                        "score": 1.1292543981
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "multiply",
+                        "score": 1.1296330865
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1639359579
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1668752837
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    }
+                ],
+                "new_columns": [
+                    "GDP Growth Rate (%)_diff_Interest Rate (%)",
+                    "Interest Rate (%)_ratio_Stock Index Value",
+                    "Unemployment Rate (%)_ratio_Interest Rate (%)",
+                    "Stock Index Value_ratio_Interest Rate (%)",
+                    "GDP Growth Rate (%)_diff_Unemployment Rate (%)",
+                    "Interest Rate (%)_multiply_Unemployment Rate (%)",
+                    "Unemployment Rate (%)_ratio_Stock Index Value",
+                    "Stock Index Value_ratio_Unemployment Rate (%)",
+                    "Interest Rate (%)_diff_Stock Index Value",
+                    "Unemployment Rate (%)_diff_Stock Index Value"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.6313315049020173
+                ],
+                "mean": [
+                    1.6494531071147516
+                ],
+                "var": [
+                    0.3985794690818459
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "diff",
+                        "score": 1.0934042957
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1155696217
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1193133747
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1285914928
+                    },
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "diff",
+                        "score": 1.1292543981
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "multiply",
+                        "score": 1.1296330865
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1639359579
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1668752837
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    }
+                ],
+                "new_columns": [
+                    "GDP Growth Rate (%)_diff_Interest Rate (%)",
+                    "Interest Rate (%)_ratio_Stock Index Value",
+                    "Unemployment Rate (%)_ratio_Interest Rate (%)",
+                    "Stock Index Value_ratio_Interest Rate (%)",
+                    "GDP Growth Rate (%)_diff_Unemployment Rate (%)",
+                    "Interest Rate (%)_multiply_Unemployment Rate (%)",
+                    "Unemployment Rate (%)_ratio_Stock Index Value",
+                    "Stock Index Value_ratio_Unemployment Rate (%)",
+                    "Interest Rate (%)_diff_Stock Index Value",
+                    "Unemployment Rate (%)_diff_Stock Index Value"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.6221644171518813
+                ],
+                "mean": [
+                    1.6409857811961288
+                ],
+                "var": [
+                    0.38708856196994024
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.01
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "diff",
+                        "score": 1.0934042957
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1155696217
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1193133747
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Interest Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1285914928
+                    },
+                    {
+                        "feature1": "GDP Growth Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "diff",
+                        "score": 1.1292543981
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "multiply",
+                        "score": 1.1296330865
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "ratio",
+                        "score": 1.1639359579
+                    },
+                    {
+                        "feature1": "Stock Index Value",
+                        "feature2": "Unemployment Rate (%)",
+                        "operation": "ratio",
+                        "score": 1.1668752837
+                    },
+                    {
+                        "feature1": "Interest Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    },
+                    {
+                        "feature1": "Unemployment Rate (%)",
+                        "feature2": "Stock Index Value",
+                        "operation": "diff",
+                        "score": 1.1687364158
+                    }
+                ],
+                "new_columns": [
+                    "GDP Growth Rate (%)_diff_Interest Rate (%)",
+                    "Interest Rate (%)_ratio_Stock Index Value",
+                    "Unemployment Rate (%)_ratio_Interest Rate (%)",
+                    "Stock Index Value_ratio_Interest Rate (%)",
+                    "GDP Growth Rate (%)_diff_Unemployment Rate (%)",
+                    "Interest Rate (%)_multiply_Unemployment Rate (%)",
+                    "Unemployment Rate (%)_ratio_Stock Index Value",
+                    "Stock Index Value_ratio_Unemployment Rate (%)",
+                    "Interest Rate (%)_diff_Stock Index Value",
+                    "Unemployment Rate (%)_diff_Stock Index Value"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.6262894750482788
+                ],
+                "mean": [
+                    1.633213741777162
+                ],
+                "var": [
+                    0.3922385065562487
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "cfa81634-1155-4b00-91d2-e5de9568c10c",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "3.0.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "3dc120a7-3fe2-455f-a311-0d3a022ce155",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "3.0.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "de3d4dbc-7254-4b12-b42c-8bc1ff7c7a52",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "3.0.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "8879df56-f462-4b5e-834d-ad07e3aabd85",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "3.0.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "3762d376-d4e5-4aa2-bbed-b3acfb3c2b78",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Country_Australia": [
+                    "categorical_to_int"
+                ],
+                "Country_Brazil": [
+                    "categorical_to_int"
+                ],
+                "Country_Canada": [
+                    "categorical_to_int"
+                ],
+                "Country_China": [
+                    "categorical_to_int"
+                ],
+                "Country_France": [
+                    "categorical_to_int"
+                ],
+                "Country_Germany": [
+                    "categorical_to_int"
+                ],
+                "Country_India": [
+                    "categorical_to_int"
+                ],
+                "Country_Japan": [
+                    "categorical_to_int"
+                ],
+                "Country_UK": [
+                    "categorical_to_int"
+                ],
+                "Country_USA": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "AutoML_2",
+                "ml_task": "regression",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "objective": "reg:squarederror",
+            "eta": 0.1,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 1,
+            "eval_metric": "rmse",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "19_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "19_Xgboost_GoldenFeatures/learner_fold_0.xgboost.json",
+        "19_Xgboost_GoldenFeatures/learner_fold_1.xgboost.json",
+        "19_Xgboost_GoldenFeatures/learner_fold_2.xgboost.json",
+        "19_Xgboost_GoldenFeatures/learner_fold_3.xgboost.json",
+        "19_Xgboost_GoldenFeatures/learner_fold_4.xgboost.json"
+    ],
+    "predictions_fname": "19_Xgboost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": "3.1211341737427727",
+    "train_time": 12.037771224975586,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "single_prediction_time": 0.201338529586792
+}

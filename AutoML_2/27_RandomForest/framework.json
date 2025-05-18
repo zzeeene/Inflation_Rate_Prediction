@@ -1,0 +1,801 @@
+{
+    "uid": "1c8f2e68-6c61-469f-9077-99e4e48158e2",
+    "name": "27_RandomForest",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6462785724183268
+                ],
+                "mean": [
+                    1.6150544755657052
+                ],
+                "var": [
+                    0.4176759931670704
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6386230908335577
+                ],
+                "mean": [
+                    1.616189284027967
+                ],
+                "var": [
+                    0.40783945214580647
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6313315049020173
+                ],
+                "mean": [
+                    1.6494531071147516
+                ],
+                "var": [
+                    0.3985794690818459
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6221644171518813
+                ],
+                "mean": [
+                    1.6409857811961288
+                ],
+                "var": [
+                    0.38708856196994024
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.01
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6262894750482788
+                ],
+                "mean": [
+                    1.633213741777162
+                ],
+                "var": [
+                    0.3922385065562487
+                ],
+                "n_samples_seen": 320,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Country_Australia": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "5fc127f2-2c74-4e59-975f-ec17fd18cfe5",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "squared_error",
+                "max_features": 0.9,
+                "min_samples_split": 20,
+                "max_depth": 4,
+                "seed": 3,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "08b9fd20-d37f-4cab-8993-49087e18c3ed",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "squared_error",
+                "max_features": 0.9,
+                "min_samples_split": 20,
+                "max_depth": 4,
+                "seed": 3,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "a365cf33-2943-40d5-b597-11777fb31c39",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "squared_error",
+                "max_features": 0.9,
+                "min_samples_split": 20,
+                "max_depth": 4,
+                "seed": 3,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "4d9eef1c-8a68-4ac1-8169-a554e2b184ab",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "squared_error",
+                "max_features": 0.9,
+                "min_samples_split": 20,
+                "max_depth": 4,
+                "seed": 3,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "18b07733-abdb-4748-b65c-529ae5687a44",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "squared_error",
+                "max_features": 0.9,
+                "min_samples_split": 20,
+                "max_depth": 4,
+                "seed": 3,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 100,
+            "train_cant_improve_limit": 1,
+            "min_steps": 1,
+            "max_steps": 50,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Country_Australia": [
+                    "categorical_to_int"
+                ],
+                "Country_Brazil": [
+                    "categorical_to_int"
+                ],
+                "Country_Canada": [
+                    "categorical_to_int"
+                ],
+                "Country_China": [
+                    "categorical_to_int"
+                ],
+                "Country_France": [
+                    "categorical_to_int"
+                ],
+                "Country_Germany": [
+                    "categorical_to_int"
+                ],
+                "Country_India": [
+                    "categorical_to_int"
+                ],
+                "Country_Japan": [
+                    "categorical_to_int"
+                ],
+                "Country_UK": [
+                    "categorical_to_int"
+                ],
+                "Country_USA": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Random Forest",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "criterion": "squared_error",
+            "max_features": 0.9,
+            "min_samples_split": 20,
+            "max_depth": 4,
+            "seed": 3,
+            "eval_metric_name": "rmse",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "27_RandomForest",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "27_RandomForest/learner_fold_0.random_forest",
+        "27_RandomForest/learner_fold_1.random_forest",
+        "27_RandomForest/learner_fold_2.random_forest",
+        "27_RandomForest/learner_fold_3.random_forest",
+        "27_RandomForest/learner_fold_4.random_forest"
+    ],
+    "predictions_fname": "27_RandomForest/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": "3.0888642942429816",
+    "train_time": 12.66045618057251,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "single_prediction_time": 0.1533668041229248
+}

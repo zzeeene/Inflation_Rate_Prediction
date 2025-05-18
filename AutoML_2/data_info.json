@@ -1,0 +1,81 @@
+{
+    "columns": [
+        "GDP Growth Rate (%)",
+        "Unemployment Rate (%)",
+        "Interest Rate (%)",
+        "Stock Index Value",
+        "Country_Australia",
+        "Country_Brazil",
+        "Country_Canada",
+        "Country_China",
+        "Country_France",
+        "Country_Germany",
+        "Country_India",
+        "Country_Japan",
+        "Country_UK",
+        "Country_USA"
+    ],
+    "rows": 400,
+    "cols": 14,
+    "target_is_numeric": true,
+    "columns_info": {
+        "GDP Growth Rate (%)": [
+            "scale"
+        ],
+        "Unemployment Rate (%)": [
+            "scale"
+        ],
+        "Interest Rate (%)": [
+            "scale"
+        ],
+        "Stock Index Value": [
+            "scale"
+        ],
+        "Country_Australia": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_Brazil": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_Canada": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_China": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_France": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_Germany": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_India": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_Japan": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_UK": [
+            "categorical",
+            "few_categories"
+        ],
+        "Country_USA": [
+            "categorical",
+            "few_categories"
+        ]
+    },
+    "target_info": [
+        "scale_log"
+    ],
+    "n_features": 14,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

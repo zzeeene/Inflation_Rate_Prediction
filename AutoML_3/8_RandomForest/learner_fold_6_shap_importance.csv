@@ -1,0 +1,15 @@
+feature,shap_importance
+Unemployment Rate (%),0.06556046679678475
+GDP Growth Rate (%),0.0614854618483811
+Stock Index Value,0.05540494863648922
+Interest Rate (%),0.026768003918909045
+Country_USA,0.0075156404036523655
+Country_Germany,0.0071176572831380715
+Country_Brazil,0.006510653347381924
+Country_UK,0.0052602022667015795
+Country_China,0.005077375731802406
+Country_India,0.002217731622218429
+Country_Australia,0.001067774674732638
+Country_Canada,0.0
+Country_France,0.0
+Country_Japan,0.0

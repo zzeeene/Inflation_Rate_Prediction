@@ -1,0 +1,1735 @@
+{
+    "uid": "bf7b455c-ee92-4233-8aa1-0ec04feafc9c",
+    "name": "13_NeuralNetwork",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.113233505869479,
+                        3.0027326575997355,
+                        3.130655421698915,
+                        11044.726575605391,
+                        0.303093835734329,
+                        0.2871011521704143,
+                        0.2871011521704143,
+                        0.28288623678240526,
+                        0.33481766569121957,
+                        0.25544245225545675,
+                        0.2912257215903797,
+                        0.3106166100371489,
+                        0.3106166100371489,
+                        0.32482471801217405
+                    ],
+                    "mean": [
+                        2.4042105263157896,
+                        6.955730994152046,
+                        4.694239766081871,
+                        20935.397660818715,
+                        0.1023391812865497,
+                        0.09064327485380116,
+                        0.09064327485380116,
+                        0.08771929824561403,
+                        0.1286549707602339,
+                        0.07017543859649122,
+                        0.0935672514619883,
+                        0.10818713450292397,
+                        0.10818713450292397,
+                        0.11988304093567251
+                    ],
+                    "var": [
+                        16.918689873807327,
+                        9.01640341301597,
+                        9.80100336941281,
+                        121985985.12988399,
+                        0.09186587326014842,
+                        0.0824270715775794,
+                        0.0824270715775794,
+                        0.08002462296091106,
+                        0.11210286925891728,
+                        0.0652508464142813,
+                        0.08481242091583735,
+                        0.09648267843097023,
+                        0.09648267843097023,
+                        0.1055110974316884
+                    ],
+                    "n_samples_seen": 342,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6312739620280821
+                ],
+                "mean": [
+                    1.6269595958927277
+                ],
+                "var": [
+                    0.3985068151346324
+                ],
+                "n_samples_seen": 342,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.037215430133858,
+                        3.0371824391245776,
+                        3.1662656472681725,
+                        11014.982569693138,
+                        0.3244152639028457,
+                        0.2908446393781907,
+                        0.2867239849129853,
+                        0.2782080568649514,
+                        0.32096464010549003,
+                        0.25509787585104793,
+                        0.306497063579042,
+                        0.31386840320319004,
+                        0.2948788993233885,
+                        0.31744973968084433
+                    ],
+                    "mean": [
+                        2.311953352769679,
+                        6.8372303206997085,
+                        4.668279883381924,
+                        21627.48670553936,
+                        0.119533527696793,
+                        0.09329446064139942,
+                        0.09037900874635568,
+                        0.08454810495626822,
+                        0.11661807580174927,
+                        0.06997084548104957,
+                        0.10495626822157435,
+                        0.11078717201166181,
+                        0.09620991253644315,
+                        0.11370262390670553
+                    ],
+                    "var": [
+                        16.299108429310916,
+                        9.22447716852672,
+                        10.02523814907054,
+                        121329841.01064365,
+                        0.105245263453153,
+                        0.0845906042550298,
+                        0.08221064352438183,
+                        0.07739972290457206,
+                        0.10301830019804673,
+                        0.06507492626371665,
+                        0.09394044998257531,
+                        0.09851337452932028,
+                        0.0869535652661731,
+                        0.10077433722343582
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6422731887669311
+                ],
+                "mean": [
+                    1.6256774074976696
+                ],
+                "var": [
+                    0.4125148490088419
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.08732348736685,
+                        3.01563017544951,
+                        3.0786383073644497,
+                        10921.979112241408,
+                        0.30270197906512913,
+                        0.30270197906512913,
+                        0.2948788993233885,
+                        0.25994977405432956,
+                        0.33440118854669776,
+                        0.23974163519328023,
+                        0.306497063579042,
+                        0.30270197906512913,
+                        0.3102183297545458,
+                        0.3278036409022247
+                    ],
+                    "mean": [
+                        2.414781341107872,
+                        6.803819241982508,
+                        4.7424489795918365,
+                        20629.86457725948,
+                        0.10204081632653061,
+                        0.10204081632653061,
+                        0.09620991253644315,
+                        0.0728862973760933,
+                        0.1282798833819242,
+                        0.061224489795918366,
+                        0.10495626822157435,
+                        0.10204081632653061,
+                        0.10787172011661808,
+                        0.12244897959183673
+                    ],
+                    "var": [
+                        16.706213290380706,
+                        9.09402535508164,
+                        9.478013827571845,
+                        119289627.72823763,
+                        0.09162848812994588,
+                        0.09162848812994587,
+                        0.0869535652661731,
+                        0.06757388503089698,
+                        0.11182415490144411,
+                        0.057476051645147866,
+                        0.09394044998257531,
+                        0.09162848812994587,
+                        0.0962354121157001,
+                        0.10745522698875468
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.620253964389014
+                ],
+                "mean": [
+                    1.6528401167828641
+                ],
+                "var": [
+                    0.3847149803402882
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.159698516213187,
+                        2.996739492450893,
+                        3.194275010298599,
+                        11290.71914949569,
+                        0.3102183297545458,
+                        0.2988302637916913,
+                        0.2825131555772745,
+                        0.2692968685424021,
+                        0.32441526390284564,
+                        0.2550978758510479,
+                        0.306497063579042,
+                        0.306497063579042,
+                        0.3102183297545458,
+                        0.3244152639028457
+                    ],
+                    "mean": [
+                        2.3272303206997087,
+                        6.845393586005832,
+                        4.566355685131195,
+                        21206.97361516035,
+                        0.10787172011661808,
+                        0.09912536443148688,
+                        0.08746355685131195,
+                        0.07871720116618076,
+                        0.119533527696793,
+                        0.06997084548104957,
+                        0.10495626822157435,
+                        0.10495626822157435,
+                        0.10787172011661808,
+                        0.119533527696793
+                    ],
+                    "var": [
+                        17.303091745786194,
+                        8.980447585614838,
+                        10.203392841418115,
+                        127480338.91278867,
+                        0.0962354121157001,
+                        0.0892995265578118,
+                        0.07981368307422931,
+                        0.07252080340674379,
+                        0.10524526345315298,
+                        0.06507492626371664,
+                        0.09394044998257531,
+                        0.0939404499825753,
+                        0.0962354121157001,
+                        0.10524526345315302
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6384916314387875
+                ],
+                "mean": [
+                    1.621570924272023
+                ],
+                "var": [
+                    0.40767156341736444
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.01
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.032408212530835,
+                        2.961699249311058,
+                        3.1915513277404797,
+                        11048.245159698821,
+                        0.3244152639028457,
+                        0.2988302637916913,
+                        0.2908446393781907,
+                        0.25994977405432956,
+                        0.3102183297545458,
+                        0.25994977405432956,
+                        0.3102183297545458,
+                        0.306497063579042,
+                        0.30270197906512913,
+                        0.3244152639028457
+                    ],
+                    "mean": [
+                        2.325743440233236,
+                        6.931603498542274,
+                        4.660349854227405,
+                        20501.800145772595,
+                        0.119533527696793,
+                        0.09912536443148688,
+                        0.09329446064139942,
+                        0.0728862973760933,
+                        0.10787172011661808,
+                        0.0728862973760933,
+                        0.10787172011661808,
+                        0.10495626822157435,
+                        0.10204081632653061,
+                        0.119533527696793
+                    ],
+                    "var": [
+                        16.260315992486124,
+                        8.771662443369685,
+                        10.185999877602018,
+                        122063721.10880843,
+                        0.105245263453153,
+                        0.0892995265578118,
+                        0.0845906042550298,
+                        0.06757388503089698,
+                        0.0962354121157001,
+                        0.06757388503089698,
+                        0.0962354121157001,
+                        0.0939404499825753,
+                        0.09162848812994588,
+                        0.10524526345315302
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6283944267610179
+                ],
+                "mean": [
+                    1.6325850061286402
+                ],
+                "var": [
+                    0.3948795555843082
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.165123109797167,
+                        3.00555317083682,
+                        3.1218102490002004,
+                        11095.654073237087,
+                        0.31386840320319004,
+                        0.3102183297545458,
+                        0.28672398491298534,
+                        0.25509787585104793,
+                        0.3278036409022247,
+                        0.2550978758510479,
+                        0.2988302637916913,
+                        0.29883026379169125,
+                        0.3102183297545458,
+                        0.3278036409022247
+                    ],
+                    "mean": [
+                        2.3886005830903794,
+                        6.880758017492712,
+                        4.726822157434402,
+                        20680.553469387756,
+                        0.11078717201166181,
+                        0.10787172011661808,
+                        0.09037900874635568,
+                        0.06997084548104957,
+                        0.12244897959183673,
+                        0.06997084548104957,
+                        0.09912536443148688,
+                        0.09912536443148688,
+                        0.10787172011661808,
+                        0.12244897959183673
+                    ],
+                    "var": [
+                        17.348250519766424,
+                        9.033349862727265,
+                        9.745699230762693,
+                        123113539.31294277,
+                        0.09851337452932028,
+                        0.0962354121157001,
+                        0.08221064352438184,
+                        0.06507492626371665,
+                        0.10745522698875468,
+                        0.06507492626371664,
+                        0.0892995265578118,
+                        0.08929952655781179,
+                        0.0962354121157001,
+                        0.10745522698875468
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6519070031402938
+                ],
+                "mean": [
+                    1.6078523504737432
+                ],
+                "var": [
+                    0.4249827407433591
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Country_Australia": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Brazil": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Canada": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_China": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_France": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Germany": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_India": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_Japan": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_UK": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "Country_USA": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.053499698620094,
+                        2.9933982494406224,
+                        3.181404555989908,
+                        11191.339126030955,
+                        0.3102183297545458,
+                        0.28672398491298534,
+                        0.2738042421428314,
+                        0.26468064545518377,
+                        0.3407713073838745,
+                        0.2646806454551838,
+                        0.3027019790651291,
+                        0.306497063579042,
+                        0.306497063579042,
+                        0.3278036409022247
+                    ],
+                    "mean": [
+                        2.3045772594752187,
+                        6.862128279883382,
+                        4.539212827988338,
+                        21012.125335276967,
+                        0.10787172011661808,
+                        0.09037900874635568,
+                        0.08163265306122448,
+                        0.07580174927113703,
+                        0.13411078717201166,
+                        0.07580174927113703,
+                        0.10204081632653061,
+                        0.10495626822157435,
+                        0.10495626822157435,
+                        0.12244897959183673
+                    ],
+                    "var": [
+                        16.43085980671319,
+                        8.960433079754184,
+                        10.121334948873344,
+                        125246071.4338313,
+                        0.0962354121157001,
+                        0.08221064352438184,
+                        0.07496876301541025,
+                        0.0700558440785727,
+                        0.11612508393611509,
+                        0.07005584407857271,
+                        0.09162848812994585,
+                        0.09394044998257531,
+                        0.09394044998257531,
+                        0.10745522698875468
+                    ],
+                    "n_samples_seen": 343,
+                    "n_features_in": 14,
+                    "columns": [
+                        "GDP Growth Rate (%)",
+                        "Unemployment Rate (%)",
+                        "Interest Rate (%)",
+                        "Stock Index Value",
+                        "Country_Australia",
+                        "Country_Brazil",
+                        "Country_Canada",
+                        "Country_China",
+                        "Country_France",
+                        "Country_Germany",
+                        "Country_India",
+                        "Country_Japan",
+                        "Country_UK",
+                        "Country_USA"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.6169795097859073
+                ],
+                "mean": [
+                    1.650250138706219
+                ],
+                "var": [
+                    0.38066371549565853
+                ],
+                "n_samples_seen": 343,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "GDP Growth Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Unemployment Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Interest Rate (%)": [
+                        "scale_normal"
+                    ],
+                    "Stock Index Value": [
+                        "scale_normal"
+                    ],
+                    "Country_Australia": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Brazil": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Canada": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_China": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_France": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Germany": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_India": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_Japan": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_UK": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Country_USA": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "3debf3d8-bd2c-43e8-93d6-9f7fefc69f58",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "2dde7227-c6ef-4cbf-981c-55d8771106aa",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "93b482d9-4b7e-41b6-8577-ee7e88f6e104",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "8b8a3665-7ea4-4c31-9fb9-528016904594",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "91e11b9f-106e-4e7c-aeb2-e8e275d12645",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_4"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "16d7048a-c566-4a78-bab9-71b719232f8b",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_5"
+        },
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "4e0882eb-b0da-4cce-b885-ed6e10b54733",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "explain_level": 2
+            },
+            "name": "learner_fold_6"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "GDP Growth Rate (%)": [
+                    "scale_normal"
+                ],
+                "Unemployment Rate (%)": [
+                    "scale_normal"
+                ],
+                "Interest Rate (%)": [
+                    "scale_normal"
+                ],
+                "Stock Index Value": [
+                    "scale_normal"
+                ],
+                "Country_Australia": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_Brazil": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_Canada": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_China": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_France": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_Germany": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_India": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_Japan": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_UK": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Country_USA": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 7,
+            "shuffle": false,
+            "X_path": "AutoML_3/X.data",
+            "y_path": "AutoML_3/y.data",
+            "results_path": "AutoML_3"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1236,
+            "dense_1_size": 64,
+            "dense_2_size": 16,
+            "learning_rate": 0.01,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "13_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "13_NeuralNetwork/learner_fold_0.neural_network",
+        "13_NeuralNetwork/learner_fold_1.neural_network",
+        "13_NeuralNetwork/learner_fold_2.neural_network",
+        "13_NeuralNetwork/learner_fold_3.neural_network",
+        "13_NeuralNetwork/learner_fold_4.neural_network",
+        "13_NeuralNetwork/learner_fold_5.neural_network",
+        "13_NeuralNetwork/learner_fold_6.neural_network"
+    ],
+    "predictions_fname": "13_NeuralNetwork/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": "3.2296973033332312",
+    "train_time": 2.9551236629486084,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "single_prediction_time": 0.22263073921203613
+}
